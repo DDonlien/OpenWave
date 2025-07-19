@@ -1,4 +1,4 @@
-[English](./README.md) | **简体中文**
+<a href="./README.md"><img src="https://img.shields.io/badge/Language-English-lightgrey?style=for-the-badge" alt="English"></a> <a href="./README.zh-CN.md"><img src="https://img.shields.io/badge/语言-简体中文-blue?style=for-the-badge" alt="简体中文"></a>
 
 # OpenWave: 构筑流动的个人声场
 
