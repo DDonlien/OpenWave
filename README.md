@@ -1,3 +1,5 @@
+**English** | [简体中文](./README.zh-CN.md)
+
 # OpenWave: Build Your Flowing Personal Sound Field
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -19,17 +21,51 @@ In today's multi-room audio systems, music is bound to specific spaces. When you
 
 By integrating with advanced indoor positioning technology and smart home platforms, OpenWave perceives your location in real-time and intelligently transitions the audio between different speakers, like a "sound wave" that surrounds you. Wherever you go, you are always in the sweet spot.
 
+### Visualizing the Flow
+
+Imagine this scenario:
+
+**1. You are in the Living Room:**
+The sound is primarily coming from the speaker closest to you, creating a personal sound bubble.
+
+```
++-----------------+     +-----------------+     +-----------------+
+|  Living Room    |     |     Hallway     |     |      Study      |
+|                 |     |                 |     |                 |
+|    (( (🚶) ))    |     |      . . .      |     |                 |
+|                 |     |                 |     |                 |
+|    🔊 (Loud)    |     |    🔉 (Medium)   |     |    🔈 (Off)      |
++-----------------+     +-----------------+     +-----------------+
+       Node A                Node B                Node C
+```
+
+**2. As you walk towards the Study:**
+OpenWave detects your movement. It doesn't just abruptly switch speakers. Instead, it smoothly fades the sound from the Living Room speaker to the Hallway speaker, and then begins to activate the Study speaker. The "sound wave" moves with you.
+
+```
++-----------------+     +-----------------+     +-----------------+
+|  Living Room    |     |     Hallway     |     |      Study      |
+|                 |     |                 |     |                 |
+|      . . .      |     |    (( (🚶) ))    |     |      . . .      |
+|                 |     |                 |     |                 |
+|    🔉 (Medium)   |     |    🔊 (Loud)    |     |    🔉 (Soft)     |
++-----------------+     +-----------------+     +-----------------+
+       Node A                Node B                Node C
+```
+
+This continuous, dynamic adjustment is what makes OpenWave a truly immersive experience.
+
 ## ✨ Key Features
 
 * **🚶‍♂️ User-Centric Dynamic Playback**: Music follows the user's footsteps, automatically flowing through the home's speaker system.
 * **🎶 Seamless Audio Transition**: Beyond simple switching, it creates a smooth "sound wave" effect by dynamically adjusting volume and EQ.
 * **👨‍👩‍👧‍👦 Multi-User Support (Planned)**: Create independent, non-interfering personal sound waves for each family member.
 * **🔌 Highly Extensible**: Centered around [Home Assistant](https://www.home-assistant.io/), it's natively compatible with thousands of sensors and devices in its ecosystem.
-* **🔊 Hardware Agnostic**: Aims to support various audio protocols, including Sonos, Chromecast, UPnP, Dante, and more.
+* **🔊 Flexible Audio Output**: Primarily designed for high-fidelity, low-latency wired systems like **Dante** to achieve the ultimate seamless experience. Also compatible with popular wireless protocols (e.g., Sonos, Chromecast) for broader accessibility.
 
 ## 🔧 How It Works
 
-OpenWave's core is a decision engine that runs as part of a smart home platform like Home Assistant.
+OpenWave's core is a decision engine that runs as part of a smart home platform like Home Assistant. This diagram shows the data flow:
 
 ```
                                +--------------------------+
