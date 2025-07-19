@@ -1,4 +1,4 @@
-**English** | [简体中文](./README.zh-CN.md)
+<a href="./README.md"><img src="https://img.shields.io/badge/Language-English-blue?style=for-the-badge" alt="English"></a> <a href="./README.zh-CN.md"><img src="https://img.shields.io/badge/语言-简体中文-lightgrey?style=for-the-badge" alt="简体中文"></a>
 
 # OpenWave: Build Your Flowing Personal Sound Field
 
